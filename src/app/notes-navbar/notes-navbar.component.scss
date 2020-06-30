@@ -1,0 +1,94 @@
+:host {
+  // background: #343a40;
+}
+
+#sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100vh;
+  color: #fff;
+  transition: all 0.3s;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#sidebar.hidden {
+  margin-left: -200px;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  #sidebar {
+    margin-left: -200px;
+  }
+
+  #sidebar.hidden {
+    margin-left: 0;
+  }
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+
+#sidebar ul {
+  max-height: 90vh;
+  overflow: auto;
+  li {
+    border-bottom: 1px solid #fff;
+
+    a {
+      padding: 15px;
+      display: block;
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .sub-title {
+        max-width: 95%;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+
+      h6 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+
+      .time-stamp {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #fff !important;
+  color: rgb(53, 51, 51) !important;
+}
+
+hr {
+  border-top: 1px solid #fff;
+  margin-top: 0;
+}

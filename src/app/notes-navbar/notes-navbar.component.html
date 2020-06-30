@@ -1,0 +1,17 @@
+
+
+   <nav id="sidebar" class="navbar-dark bg-dark"   [ngClass]="{'hidden': navService.hideSideNav }">
+     <ul class="navbar-nav" *ngIf="notesArray?.length!=0">
+        <li  *ngFor="let item of notesArray.reverse(); let i = index" class="nav-item">
+          <!-- {{item | json}} -->
+          <a class="nav-link" [ngClass]="{'active': item.id==currentNote.id}" (click)="clikedNote(item, i)"> 
+                      <h6 class="card-title">{{item.title}}</h6>
+                     <div class="time-stamp">{{item.updated | date: "shortTime"}}  
+                     <span class="medium text-muted sub-title">{{item.subtitle}}</span>
+                     </div>
+          </a>
+        
+        </li>
+      </ul> 
+    </nav>
+  

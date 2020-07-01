@@ -1,11 +1,15 @@
-#NotesApp
-Thisi is for Coding Test purpose. Live can viw hear: https://notesapp-c3287.firebaseapp.com/
-
-Description. It will add Notes and will store in your localstorage.
-
-
-
 # NotesApp
+This is for Coding Test purpose. Having minute bugs. Inspiration is NotesApp application in Mac OS.
+
+# Description: 
+It will faciliates add/deletes Notes and will store in your localstorage.
+# Live: https://notesapp-c3287.firebaseapp.com/
+
+
+# Tech stack: 
+Angular 8 and Redux store along with localStorage
+
+# Technical Details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
 
